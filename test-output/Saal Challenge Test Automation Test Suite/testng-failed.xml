@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Saal Challenge Test Automation Test Suite]" parallel="methods">
+  <test thread-count="5" name="Saal Challenge App Test Case(failed)" parallel="methods">
+    <classes>
+      <class name="com.saal.challenge.WebTest">
+        <methods>
+          <include name="logInTest"/>
+          <include name="checkoutTest"/>
+          <include name="signInTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.saal.challenge.WebTest -->
+    </classes>
+  </test> <!-- Saal Challenge App Test Case(failed) -->
+</suite> <!-- Failed suite [Saal Challenge Test Automation Test Suite] -->

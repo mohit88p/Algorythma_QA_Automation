@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Saal Challenge Test Automation Test Suite" parallel="methods">
+	<test name="Saal Challenge App Test Case">
+		<classes>
+			<class name="com.saal.challenge.WebTest"/>
+		</classes>
+	</test>	
+</suite>					

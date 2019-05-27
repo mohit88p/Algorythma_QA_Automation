@@ -5,9 +5,8 @@
     <classes>
       <class name="com.saal.challenge.WebTest">
         <methods>
-          <include name="logInTest"/>
           <include name="checkoutTest"/>
-          <include name="signInTest"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.saal.challenge.WebTest -->

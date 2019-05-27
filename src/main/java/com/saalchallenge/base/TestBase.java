@@ -38,10 +38,11 @@ public class TestBase {
 	public static String projectPath=System.getProperty("user.dir");
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentReports extent;
-	public static ExtentTest testEvent;
+	public static ExtentTest test;
 	public static Logger log= LogManager.getLogger();
 	public static XSSFWorkbook workbook;
 	public static XSSFSheet sheet;
+	public static Logger logger = LogManager.getLogger();
 	
 	public TestBase()
 	{

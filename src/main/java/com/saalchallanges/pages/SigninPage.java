@@ -27,7 +27,7 @@ public class SigninPage extends TestBase {
 		PageFactory.initElements(driver, this);
 		
 		try {
-			projectPath = System.getProperty("user.dir");
+			
 			workbook = new XSSFWorkbook(projectPath+"/DataSheet.xlsx");
 			sheet = workbook.getSheetAt(0);
 		} catch (IOException e) {

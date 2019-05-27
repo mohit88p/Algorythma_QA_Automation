@@ -8,6 +8,8 @@ import java.io.IOException;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
 import com.saalchallenge.base.TestBase;
 
 /**
@@ -48,9 +50,10 @@ public class CartPage extends TestBase{
 	WebElement txt_order_confirm;
 	
 	public CartPage() {
+		PageFactory.initElements(driver, this);
 		
 		try {
-			projectPath = System.getProperty("user.dir");
+			
 			workbook = new XSSFWorkbook(projectPath+"/DataSheet.xlsx");
 			sheet = workbook.getSheetAt(0);
 

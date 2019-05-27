@@ -6,6 +6,7 @@
       <class name="com.saal.challenge.WebTest">
         <methods>
           <include name="checkoutTest"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.saal.challenge.WebTest -->

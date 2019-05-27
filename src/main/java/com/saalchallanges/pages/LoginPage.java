@@ -5,10 +5,13 @@ package com.saalchallanges.pages;
 
 import java.io.IOException;
 import java.util.Date;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import com.saalchallenge.base.TestBase;
 
@@ -27,7 +30,7 @@ public class LoginPage extends TestBase{
 	@FindBy(id="SubmitLogin")
 	WebElement submitButton;
 
-	@FindBy(id="email_create")
+	@FindBy(xpath="//input[@id='email_create']")
 	WebElement txt_email_address;
 
 	@FindBy(id="SubmitCreate")
@@ -35,6 +38,7 @@ public class LoginPage extends TestBase{
 
 	public LoginPage() {
 		
+		PageFactory.initElements(driver, this);
 		try {
 			
 			workbook = new XSSFWorkbook(projectPath+"/DataSheet.xlsx");
@@ -56,8 +60,15 @@ public class LoginPage extends TestBase{
 	}
 
 	public void enter_email() {
-		String timestamp = String.valueOf(new Date().getTime());
-		String email = "hf_challenge_" + timestamp + "@hf" + timestamp.substring(7) + ".com";
+		
+		Random random = new Random();
+		int randomValue = random.nextInt(900) + 100;
+		System.out.println(randomValue);
+		String email = "hf_challenge_" + randomValue + "@gmail.com";
+		System.out.println("Email is:"+email);
+		driver.manage().timeouts().pageLoadTimeout(com.saalchallenge.util.TestUtil.PAGE_LOAD_TIMEOUT,TimeUnit.SECONDS);
+		//String timestamp = String.valueOf(new Date().getTime());
+		//String email = "hf_challenge_" + timestamp + "@hf" + timestamp.substring(7) + ".com";
 		txt_email_address.sendKeys(email);
 	}
 

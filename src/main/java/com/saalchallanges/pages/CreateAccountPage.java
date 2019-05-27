@@ -8,6 +8,7 @@ import java.io.IOException;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import com.saalchallenge.base.TestBase;
@@ -73,6 +74,7 @@ public class CreateAccountPage extends TestBase {
 	WebElement btn_submit;
 
 	public CreateAccountPage() {
+		PageFactory.initElements(driver, this);
 
 		try {
 			workbook = new XSSFWorkbook(projectPath + "/DataSheet.xlsx");

@@ -34,3 +34,160 @@
 [INFO ] 2019-05-27 21:37:34.674 [main] TestBase - Enter the URL
 [INFO ] 2019-05-27 21:38:00.296 [main] TestBase - Enter the URL
 [INFO ] 2019-05-27 21:38:22.983 [main] TestBase - Enter the URL
+[INFO ] 2019-05-27 23:56:52.802 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Enter the URL
+[INFO ] 2019-05-27 23:57:18.063 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-27 23:58:16.839 [main] TestBase - Enter the URL
+[INFO ] 2019-05-27 23:58:31.380 [main] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:00:27.993 [main] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:00:41.828 [main] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:04:44.270 [main] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:05:03.375 [main] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:09:17.194 [main] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:09:30.889 [main] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:10:50.976 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:11:05.837 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:13:06.260 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:13:19.249 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:15:35.864 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:15:51.100 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:20:20.159 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:20:32.396 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:21:24.758 [main] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:21:39.821 [main] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:23:59.315 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:24:20.276 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:24:20.544 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Clicking on Create Account Button
+[INFO ] 2019-05-28 00:25:14.042 [main] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:25:33.452 [main] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:25:33.513 [main] TestBase - Entering Email Id to Create New Account
+[INFO ] 2019-05-28 00:25:33.762 [main] TestBase - Clicking on Create Account Button
+[INFO ] 2019-05-28 00:26:10.080 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:26:24.371 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:26:24.477 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Entering Email Id to Create New Account
+[INFO ] 2019-05-28 00:26:24.736 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Clicking on Create Account Button
+[INFO ] 2019-05-28 00:27:51.963 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:28:06.197 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:28:06.311 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Entering Email Id to Create New Account
+[INFO ] 2019-05-28 00:28:06.570 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Clicking on Create Account Button
+[INFO ] 2019-05-28 00:28:09.228 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Selecting Gender Option
+[INFO ] 2019-05-28 00:28:09.378 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Entering Name and password details
+[INFO ] 2019-05-28 00:28:09.651 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Selecting date from the dropdown
+[INFO ] 2019-05-28 00:28:09.917 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Selecting month from the dropdown
+[INFO ] 2019-05-28 00:28:10.183 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Selecting year from the dropdown
+[INFO ] 2019-05-28 00:28:10.792 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Entering all the address details such as such as addr, city, state, ph.no, comapny etc
+[INFO ] 2019-05-28 00:28:14.069 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Click on Submit button
+[INFO ] 2019-05-28 00:28:14.097 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Fetching the heading of the page
+[INFO ] 2019-05-28 00:30:29.903 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:30:47.214 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:30:47.293 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Entering Email Id to Create New Account
+[INFO ] 2019-05-28 00:30:47.546 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Clicking on Create Account Button
+[INFO ] 2019-05-28 00:30:49.482 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Selecting Gender Option
+[INFO ] 2019-05-28 00:30:49.653 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Entering Name and password details
+[INFO ] 2019-05-28 00:30:49.915 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Selecting date from the dropdown
+[INFO ] 2019-05-28 00:30:50.185 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Selecting month from the dropdown
+[INFO ] 2019-05-28 00:30:50.450 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Selecting year from the dropdown
+[INFO ] 2019-05-28 00:30:51.055 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Entering all the address details such as such as addr, city, state, ph.no, comapny etc
+[INFO ] 2019-05-28 00:30:54.288 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Click on Submit button
+[INFO ] 2019-05-28 00:30:54.328 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Fetching the heading of the page
+[INFO ] 2019-05-28 00:30:54.345 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Fetching the fullname of the user
+[INFO ] 2019-05-28 00:30:54.347 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Validating if the Heading of the page is right
+[INFO ] 2019-05-28 00:30:54.347 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Validating if the Full Name of the user is correct
+[INFO ] 2019-05-28 00:30:54.361 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Validating if the Account Information is displayed correctly
+[INFO ] 2019-05-28 00:30:54.390 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Validating if the logout button is displayed
+[INFO ] 2019-05-28 00:30:54.393 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Validating if the 'controller=my-account' is appended in page URL
+[INFO ] 2019-05-28 00:37:51.500 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:37:51.500 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:37:57.064 [TestNG-test=Saal Challenge App Test Case-3] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:38:09.227 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:38:11.632 [TestNG-test=Saal Challenge App Test Case-3] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:39:23.127 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:39:40.529 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:39:40.638 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Entering Email Id to Create New Account
+[INFO ] 2019-05-28 00:39:40.896 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Clicking on Create Account Button
+[INFO ] 2019-05-28 00:39:42.747 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Selecting Gender Option
+[INFO ] 2019-05-28 00:39:42.894 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Entering Name and password details
+[INFO ] 2019-05-28 00:39:43.170 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Selecting date from the dropdown
+[INFO ] 2019-05-28 00:39:43.441 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Selecting month from the dropdown
+[INFO ] 2019-05-28 00:39:43.711 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Selecting year from the dropdown
+[INFO ] 2019-05-28 00:39:44.322 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Entering all the address details such as such as addr, city, state, ph.no, comapny etc
+[INFO ] 2019-05-28 00:39:48.738 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Click on Submit button
+[INFO ] 2019-05-28 00:39:48.768 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Fetching the heading of the page
+[INFO ] 2019-05-28 00:39:48.788 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Fetching the fullname of the user
+[INFO ] 2019-05-28 00:39:48.790 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Validating if the Heading of the page is right
+[INFO ] 2019-05-28 00:39:48.790 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Validating if the Full Name of the user is correct
+[INFO ] 2019-05-28 00:39:48.804 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Validating if the Account Information is displayed correctly
+[INFO ] 2019-05-28 00:39:48.831 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Validating if the logout button is displayed
+[INFO ] 2019-05-28 00:39:48.834 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Validating if the 'controller=my-account' is appended in page URL
+[INFO ] 2019-05-28 00:39:52.846 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:40:09.833 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:40:13.222 [TestNG-test=Saal Challenge App Test Case-2] TestBase - LogIn is completed by entering username and password
+[INFO ] 2019-05-28 00:40:13.250 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Fetching the Heading after successfull login
+[INFO ] 2019-05-28 00:40:13.269 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Fetching the Fullname of the sign in user
+[INFO ] 2019-05-28 00:40:13.270 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Validating if the Heading displayed is correct
+[INFO ] 2019-05-28 00:40:13.270 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Validating if the Fullname displayed is correct
+[INFO ] 2019-05-28 00:40:13.284 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Fetching & Validating if the Account Information is displayed correctly
+[INFO ] 2019-05-28 00:40:13.313 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Validating the logout button is displayed or not
+[INFO ] 2019-05-28 00:40:13.317 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Validating if the 'controller=my-account' is appended in page URL
+[INFO ] 2019-05-28 00:40:17.180 [TestNG-test=Saal Challenge App Test Case-3] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:40:31.540 [TestNG-test=Saal Challenge App Test Case-3] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:40:34.625 [TestNG-test=Saal Challenge App Test Case-3] TestBase - LogIn is completed by entering username and password
+[INFO ] 2019-05-28 00:40:39.875 [TestNG-test=Saal Challenge App Test Case-3] TestBase - Click on Women button
+[INFO ] 2019-05-28 00:40:44.014 [TestNG-test=Saal Challenge App Test Case-3] TestBase - Selecting the dress
+[INFO ] 2019-05-28 00:40:44.300 [TestNG-test=Saal Challenge App Test Case-3] TestBase - Viewing the dress in maximized view in next page
+[INFO ] 2019-05-28 00:45:23.990 [main] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:45:48.055 [main] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:45:50.981 [main] TestBase - LogIn is completed by entering username and password
+[INFO ] 2019-05-28 00:47:19.941 [main] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:47:33.840 [main] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:47:37.036 [main] TestBase - LogIn is completed by entering username and password
+[INFO ] 2019-05-28 00:47:42.684 [main] TestBase - Click on Women button
+[INFO ] 2019-05-28 00:47:47.179 [main] TestBase - Selecting the dress
+[INFO ] 2019-05-28 00:47:47.471 [main] TestBase - Viewing the dress in maximized view in next page
+[INFO ] 2019-05-28 00:50:18.890 [main] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:50:31.035 [main] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:50:34.075 [main] TestBase - LogIn is completed by entering username and password
+[INFO ] 2019-05-28 00:50:40.033 [main] TestBase - Click on Women button
+[INFO ] 2019-05-28 00:50:44.070 [main] TestBase - Selecting the dress
+[INFO ] 2019-05-28 00:50:44.355 [main] TestBase - Viewing the dress in maximized view in next page
+[INFO ] 2019-05-28 00:52:47.003 [main] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:53:01.237 [main] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:53:04.164 [main] TestBase - LogIn is completed by entering username and password
+[INFO ] 2019-05-28 00:53:10.060 [main] TestBase - Click on Women button
+[INFO ] 2019-05-28 00:53:13.694 [main] TestBase - Selecting the dress
+[INFO ] 2019-05-28 00:53:13.947 [main] TestBase - Clicking on Submit button for checkout
+[INFO ] 2019-05-28 00:55:21.356 [main] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:55:35.836 [main] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:55:38.714 [main] TestBase - LogIn is completed by entering username and password
+[INFO ] 2019-05-28 00:55:44.420 [main] TestBase - Click on Women button
+[INFO ] 2019-05-28 00:55:49.750 [main] TestBase - Selecting the dress
+[INFO ] 2019-05-28 00:55:49.997 [main] TestBase - Clicking on Submit button for checkout
+[INFO ] 2019-05-28 00:57:19.305 [main] TestBase - Enter the URL
+[INFO ] 2019-05-28 00:57:40.457 [main] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 00:57:43.361 [main] TestBase - LogIn is completed by entering username and password
+[INFO ] 2019-05-28 00:57:49.365 [main] TestBase - Click on Women button
+[INFO ] 2019-05-28 00:57:54.973 [main] TestBase - Selecting the dress
+[INFO ] 2019-05-28 00:57:55.227 [main] TestBase - Clicking on Submit button for checkout
+[INFO ] 2019-05-28 01:00:29.128 [main] TestBase - Enter the URL
+[INFO ] 2019-05-28 01:00:42.999 [main] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 01:00:46.117 [main] TestBase - LogIn is completed by entering username and password
+[INFO ] 2019-05-28 01:00:51.760 [main] TestBase - Click on Women button
+[INFO ] 2019-05-28 01:00:55.958 [main] TestBase - Selecting the dress
+[INFO ] 2019-05-28 01:02:57.231 [main] TestBase - Enter the URL
+[INFO ] 2019-05-28 01:03:10.489 [main] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 01:03:14.044 [main] TestBase - LogIn is completed by entering username and password
+[INFO ] 2019-05-28 01:03:21.428 [main] TestBase - Click on Women button
+[INFO ] 2019-05-28 01:03:25.784 [main] TestBase - Selecting the dress
+[INFO ] 2019-05-28 01:03:31.040 [main] TestBase - Clicking on Submit button for checkout
+[INFO ] 2019-05-28 01:03:40.923 [main] TestBase - Clicking on Checkout button to proceed
+[INFO ] 2019-05-28 01:03:44.140 [main] TestBase - Clicking on Checkout button to proceed in the next page again
+[INFO ] 2019-05-28 01:03:47.073 [main] TestBase - Clicking on Next step button to process address
+[INFO ] 2019-05-28 01:03:47.314 [main] TestBase - Selecting the Terms and conditions checkbox
+[INFO ] 2019-05-28 01:03:50.548 [main] TestBase - Clicking on next to complete the shipping step
+[INFO ] 2019-05-28 01:03:53.617 [main] TestBase - Select button - Pay by Bank Wire
+[INFO ] 2019-05-28 01:03:57.938 [main] TestBase - Click on Confirm Order Button
+[INFO ] 2019-05-28 01:03:57.954 [main] TestBase - Fetching the text Order Confirmation
+[INFO ] 2019-05-28 01:03:57.956 [main] TestBase - Verifying text in application if its ORDER Confirmation
+[INFO ] 2019-05-28 01:03:58.002 [main] TestBase - Validating if the shipping section is displayed
+[INFO ] 2019-05-28 01:03:58.027 [main] TestBase - Validating if the Confirmation Step End section is displayed
+[INFO ] 2019-05-28 01:03:58.040 [main] TestBase - Verifying text ORDER Confirmation is displayed
+[INFO ] 2019-05-28 01:03:58.043 [main] TestBase - Validating if the 'order-confirmation' is appended in page URL

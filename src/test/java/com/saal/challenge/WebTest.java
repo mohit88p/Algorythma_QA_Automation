@@ -10,11 +10,9 @@ import java.util.Date;
 import java.util.Random;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -24,7 +22,12 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.saalchallanges.pages.AccountPage;
+import com.saalchallanges.pages.CartPage;
+import com.saalchallanges.pages.CreateAccountPage;
+import com.saalchallanges.pages.LoginPage;
 import com.saalchallanges.pages.SigninPage;
+import com.saalchallanges.pages.WomenClothingPage;
 import com.saalchallenge.base.TestBase;
 
 @Listeners(com.saalchallenge.base.TestNGListeners.class)
@@ -34,6 +37,11 @@ public class WebTest extends TestBase {
 	String existingUserEmail = "hf_challenge_1234567@hf12345.com";
 	String existingUserPassword = "12345678";
 	SigninPage signInObj;
+	CreateAccountPage createAcc;
+	LoginPage lginPg;
+	AccountPage myAccount;
+	CartPage cartPg;
+	WomenClothingPage womenClothing;
 
 	public WebTest() throws IOException {
 		super();
@@ -47,104 +55,225 @@ public class WebTest extends TestBase {
 		extent.attachReporter(htmlReporter);
 	}
 
-	@Test
+	@Test(priority = 1)
 	public void signInTest() {
+		
+		extent.attachReporter(htmlReporter);
+		test= extent.createTest("SignIn Test", "This test is to check the login");
+		test.log(Status.INFO, "This TEST has been started(status, details)");
 
 		signInObj=new SigninPage();
+		createAcc=new CreateAccountPage();
+		lginPg=new LoginPage();
+		myAccount=new AccountPage();
+				
 		signInObj.signin();
-		Random random = new Random();
-		int randomValue = random.nextInt(900) + 100;
-		System.out.println(randomValue);
-		String email = "hf_challenge_" + randomValue + "@gmail.com";
-		String name = "Firstname";
-		String surname = "Lastname";
-		driver.findElement(By.id("email_create")).sendKeys(email);
-		driver.findElement(By.id("SubmitCreate")).click();
-		driver.findElement(By.id("id_gender2")).click();
-		System.out.println("helo");
-		driver.findElement(By.id("customer_firstname")).sendKeys(name);
-		driver.findElement(By.id("customer_lastname")).sendKeys(surname);
-		driver.findElement(By.id("passwd")).sendKeys("Qwerty");
-		Select select = new Select(driver.findElement(By.id("days")));
-		select.selectByValue("1");
-		select = new Select(driver.findElement(By.id("months")));
-		select.selectByValue("1");
-		select = new Select(driver.findElement(By.id("years")));
-		select.selectByValue("2000");
-		driver.findElement(By.id("company")).sendKeys("Company");
-		driver.findElement(By.id("address1")).sendKeys("Qwerty, 123");
-		driver.findElement(By.id("address2")).sendKeys("zxcvb");
-		driver.findElement(By.id("city")).sendKeys("Qwerty");
-		select = new Select(driver.findElement(By.id("id_state")));
-		select.selectByVisibleText("Colorado");
-		driver.findElement(By.id("postcode")).sendKeys("12345");
-		driver.findElement(By.id("other")).sendKeys("Qwerty");
-		driver.findElement(By.id("phone")).sendKeys("12345123123");
-		driver.findElement(By.id("phone_mobile")).sendKeys("12345123123");
-		driver.findElement(By.id("alias")).sendKeys("hf");
-		driver.findElement(By.id("submitAccount")).click();
+		logger.info("Sign In Button is clicked");
+		test.pass("Sign In Button is clicked");
 
-		WebElement heading= driver.findElement(By.cssSelector("h1"));
+		lginPg.enter_email();
+		logger.info("Entering Email Id to Create New Account");
+		test.pass("Entering Email Id to Create New Account");
+		
+		lginPg.click_btn_create_account();
+		logger.info("Clicking on Create Account Button");
+		test.pass("Clicking on Create Account Button");
+		
+		createAcc.click_radio_btn_gender();
+		logger.info("Selecting Gender Option");
+		test.pass("Selecting Gender Option");
 
+		createAcc.enter_name_and_pwd();
+		logger.info("Entering Name and password details");
+		test.pass("Entering Name and password details");
 
-		assertEquals(heading.getText(), "MY ACCOUNT");
-		assertEquals(driver.findElement(By.className("account")).getText(), name + " " + surname);
-		assertTrue(driver.findElement(By.className("info-account")).getText().contains("Welcome to your account."));
-		assertTrue(driver.findElement(By.className("logout")).isDisplayed());
-		assertTrue(driver.getCurrentUrl().contains("controller=my-account"));
+		createAcc.select_drd_day();
+		logger.info("Selecting date from the dropdown");
+		test.pass("Selecting date from the dropdown");
+
+		createAcc.select_drd_month();
+		logger.info("Selecting month from the dropdown");
+		test.pass("Selecting month from the dropdown");
+
+		createAcc.select_drd_year();
+		logger.info("Selecting year from the dropdown");
+		test.pass("Selecting year from the dropdown");
+
+		createAcc.enter_all_address_details();
+		logger.info("Entering all the address details such as such as addr, city, state, ph.no, comapny etc");
+		test.pass("Entering all the address details such as such as addr, city, state, ph.no, comapny etc");
+
+		createAcc.click_btn_submit();
+		logger.info("Click on Submit button");
+		test.pass("Click on Submit button");
+
+		String get_txt_heading = myAccount.get_heading_label();
+		logger.info("Fetching the heading of the page");
+		test.pass("Fetching the heading of the page");
+
+		String get_fullname = myAccount.get_fullname_label();
+		logger.info("Fetching the fullname of the user");
+		test.pass("Fetching the fullname of the user");
+
+		Assert.assertEquals(myAccount.lbl_my_account_heading(), get_txt_heading, "Account Heading is not same");
+		logger.info("Validating if the Heading of the page is right");
+		test.pass("Validating if the Heading of the page is right");
+
+		Assert.assertEquals(get_fullname, createAcc.name()+" "+createAcc.surname(), "Name and Surname is not same");
+		logger.info("Validating if the Full Name of the user is correct");
+		test.pass("Validating if the Full Name of the user is correct");
+
+		Assert.assertEquals(myAccount.get_txt_account_info(), myAccount.lbl_txt_account_info(), "Account Info, text is not displayed");
+		logger.info("Validating if the Account Information is displayed correctly");
+		test.pass("Validating if the Account Information is displayed correctly");
+
+		Assert.assertTrue(myAccount.is_disp_logout(), "Logout button is not displayed");
+		logger.info("Validating if the logout button is displayed");
+		test.pass("Validating if the logout button is displayed");
+
+		Assert.assertTrue(myAccount.my_account_in_url(), "controller=my-account is not displayed in URL");
+		logger.info("Validating if the 'controller=my-account' is appended in page URL");
+		test.pass("Validating if the 'controller=my-account' is appended in page URL");
 	}
 
-	@Test(priority=2)
+	@Test(priority = 2)
 	public void logInTest() {
-		String fullName = "Vikas Kumar";
-		driver.findElement(By.className("login")).click();
+		extent.attachReporter(htmlReporter);
+		test = extent.createTest("Login Test", "This test is to check the login");
+		test.log(Status.INFO, "This TEST has been started(status, details)");
 
-		driver.findElement(By.id("email")).sendKeys(existingUserEmail);
-		driver.findElement(By.id("passwd")).sendKeys(existingUserPassword);
-		driver.findElement(By.id("SubmitLogin")).click();
-		WebElement heading =driver.findElement(By.cssSelector("h1"));
+		signInObj=new SigninPage();
+		createAcc=new CreateAccountPage();
+		lginPg=new LoginPage();
+		myAccount=new AccountPage();		
 
-		assertEquals("MY ACCOUNT", heading.getText());
-		assertEquals(fullName, driver.findElement(By.className("account")).getText());
-		assertTrue(driver.findElement(By.className("info-account")).getText().contains("Welcome to your account."));
-		assertTrue(driver.findElement(By.className("logout")).isDisplayed());
-		assertTrue(driver.getCurrentUrl().contains("controller=my-account"));
+		signInObj.signin();
+		logger.info("Sign In Button is clicked");
+		test.pass("Sign In Button is clicked");
+
+		lginPg.login();
+		logger.info("LogIn is completed by entering username and password");
+		test.pass("LogIn is completed by entering username and password");
+
+		String get_txt_heading = myAccount.get_heading_label();
+		logger.info("Fetching the Heading after successfull login");
+		test.pass("Fetching the Heading after successfull login");
+
+		String get_fullname = myAccount.get_fullname_label();
+		logger.info("Fetching the Fullname of the sign in user");
+		test.pass("Fetching the Fullname of the sign in user");
+
+		Assert.assertEquals(myAccount.lbl_my_account_heading(), get_txt_heading, "Account Heading is not same");
+		logger.info("Validating if the Heading displayed is correct");
+		test.pass("Validating if the Heading displayed is correct");
+
+		Assert.assertEquals(myAccount.get_fullname(), get_fullname, "User Name is not same");
+		logger.info("Validating if the Fullname displayed is correct");	
+		test.pass("Validating if the Fullname displayed is correct");
+
+		Assert.assertEquals(myAccount.get_txt_account_info(), myAccount.lbl_txt_account_info(), "Account Info, text is not displayed");
+		logger.info("Fetching & Validating if the Account Information is displayed correctly");	
+		test.pass("Fetching & Validating if the Account Information is displayed correctly");
+
+		Assert.assertTrue(myAccount.is_disp_logout(), "Logout button is not displayed");
+		logger.info("Validating the logout button is displayed or not");	
+		test.pass("Validating the logout button is displayed or not");
+
+		Assert.assertTrue(myAccount.my_account_in_url(), "controller=my-account is not displayed in URL");
+		logger.info("Validating if the 'controller=my-account' is appended in page URL");
+		test.pass("Validating if the 'controller=my-account' is appended in page URL");
+
 	}
 
-	@Test(priority=3)
-	public void checkoutTest() {
+	@Test
+	public void checkoutTest() throws Exception {		
+		extent.attachReporter(htmlReporter);
+		test = extent.createTest("Checkout Test", "This test is to check the login");
+		test.log(Status.INFO, "This TEST has been started");
+		
+		signInObj=new SigninPage();
+		
+		lginPg=new LoginPage();
+		myAccount=new AccountPage();
+		cartPg=new CartPage();
+		womenClothing=new WomenClothingPage();
+		
 
-		driver.findElement(By.className("login")).click();
-		driver.findElement(By.id("email")).sendKeys(existingUserEmail);
-		driver.findElement(By.id("passwd")).sendKeys(existingUserPassword);
-		System.out.println("Click on pass");
-		driver.findElement(By.id("SubmitLogin")).click();
-		System.out.println("Click on pass123");
-		driver.findElement(By.linkText("Women")).click();
-		System.out.println("Click on pass1234");
+		signInObj.signin();
+		logger.info("Sign In Button is clicked");
+		test.pass("Sign In Button is clicked");
 
-		driver.findElement(By.xpath("//a[@title='Faded Short Sleeve T-shirts']/ancestor::li")).click();
-		System.out.println("Click on pass88");
-		//driver.findElement(By.xpath("//a[@title='Faded Short Sleeve T-shirts']/ancestor::li")).click();
-		System.out.println("Click on pass00");
-		driver.findElement(By.name("Submit")).click();
-		System.out.println("Click on pass99");
-		driver.findElement(By.xpath("//*[@id='layer_cart']//a[@class and @title='Proceed to checkout']")).click();
-		driver.findElement(By.xpath("//*[contains(@class,'cart_navigation')]/a[@title='Proceed to checkout']")).click();
-		driver.findElement(By.name("processAddress")).click();
-		driver.findElement(By.id("uniform-cgv")).click();
+		lginPg.login();
+		logger.info("LogIn is completed by entering username and password");
+		test.pass("LogIn is completed by entering username and password");
+		
+		myAccount.click_btn_women();		
+		logger.info("Click on Women button");
+		test.pass("Click on Women button");
+		
+		womenClothing.select_dress();
+		logger.info("Selecting the dress");
+		test.pass("Selecting the dress");
+		
+//		womenClothing.select_view_dress();
+//		logger.info("Viewing the dress in maximized view in next page");
+//		test.pass("Viewing the dress in maximized view in next page");
 
-		driver.findElement(By.name("processCarrier")).click();
-		driver.findElement(By.className("bankwire")).click();
-		driver.findElement(By.xpath("//*[@id='cart_navigation']/button")).click();
+		womenClothing.click_btn_submit();
+		logger.info("Clicking on Submit button for checkout");
+		test.pass("Clicking on Submit button for checkout");
 
-		WebElement heading =driver.findElement(By.cssSelector("h1"));
+		womenClothing.click_btn_proceed_checkout();	
+		logger.info("Clicking on Checkout button to proceed");
+		test.pass("Clicking on Checkout button to proceed");
 
-		assertEquals("ORDER CONFIRMATION", heading.getText());
-		assertTrue(driver.findElement(By.xpath("//li[@class='step_done step_done_last four']")).isDisplayed());
-		assertTrue(driver.findElement(By.xpath("//li[@id='step_end' and @class='step_current last']")).isDisplayed());
-		assertTrue(driver.findElement(By.xpath("//*[@class='cheque-indent']/strong")).getText().contains("Your order on My Store is complete."));
-		assertTrue(driver.getCurrentUrl().contains("controller=order-confirmation"));
+		cartPg.click_proceed_checkout();
+		logger.info("Clicking on Checkout button to proceed in the next page again");
+		test.pass("Clicking on Checkout button to proceed in the next page again");
+
+		cartPg.click_process_address();
+		logger.info("Clicking on Next step button to process address");
+		test.pass("Clicking on Next step button to process address");
+
+		cartPg.chk_terms_conditions();
+		logger.info("Selecting the Terms and conditions checkbox");
+		test.pass("Selecting the Terms and conditions checkbox");
+
+		cartPg.click_process_shipping();
+		logger.info("Clicking on next to complete the shipping step");
+		test.pass("Clicking on next to complete the shipping step");
+
+		cartPg.click_btn_pay_by_bank_wire();
+		logger.info("Select button - Pay by Bank Wire");
+		test.pass("Select button - Pay by Bank Wire");
+
+		cartPg.click_btn_confirm_order();	
+		logger.info("Click on Confirm Order Button");
+		test.pass("Click on Confirm Order Button");
+
+		String get_txt_heading = cartPg.get_heading_label();
+		logger.info("Fetching the text Order Confirmation");
+		test.pass("Fetching the text Order Confirmation");
+
+		Assert.assertEquals(cartPg.lbl_order_confirmation(), get_txt_heading,  "Order Confirmation text is not displayed");	
+		logger.info("Verifying text in application if its ORDER Confirmation");
+		test.pass("Verifying text in application if its ORDER Confirmation");
+
+		Assert.assertTrue(cartPg.is_disp_shipping_step4(), "Shipping Step4 is not displayed");
+		logger.info("Validating if the shipping section is displayed");
+		test.pass("Validating if the shipping section is displayed");
+
+		Assert.assertTrue(cartPg.is_disp_conformation_step_end(), "Confirmation Step End section is not displayed");
+		logger.info("Validating if the Confirmation Step End section is displayed");
+		test.pass("Validating if the Confirmation Step End section is displayed");
+
+		Assert.assertEquals(cartPg.get_txt_order_confirmation(), cartPg.lbl_txt_order_confirmation(), "Order Completion Text is not displayed");
+		logger.info("Verifying text ORDER Confirmation is displayed");
+		test.pass("Verifying text ORDER Confirmation is displayed");
+
+		Assert.assertTrue(cartPg.order_confirmation_in_url(), "The URL doesnt contains 'order-confirmation'");
+		logger.info("Validating if the 'order-confirmation' is appended in page URL");
+		test.pass("Validating if the 'order-confirmation' is appended in page URL");
 	}
 	
 	@AfterMethod
@@ -152,7 +281,7 @@ public class WebTest extends TestBase {
 		
 		if(ITestResult.FAILURE==result.getStatus())
         {
-			testEvent.log(Status.FAIL, result.getThrowable());
+			test.log(Status.FAIL, result.getThrowable());
             try 
             {
                 TakesScreenshot ts=(TakesScreenshot)driver;

@@ -8,6 +8,7 @@ import java.io.IOException;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.saalchallenge.base.TestBase;
@@ -37,6 +38,7 @@ public class AccountPage extends TestBase{
 	WebElement lbl_fullname;
 	
 	public AccountPage() {
+		PageFactory.initElements(driver, this);
 		try {
 			
 			workbook = new XSSFWorkbook(projectPath+"/DataSheet.xlsx");
@@ -58,6 +60,7 @@ public class AccountPage extends TestBase{
 	}
 
 	public String get_heading_label() {
+		System.out.println("PRINT");
 		String lbl_heading = heading.getText();
 		return lbl_heading;
 	}
@@ -87,7 +90,8 @@ public class AccountPage extends TestBase{
 	}
 	
 	public String get_fullname_label() {
-		String full_name = this.wait.until(ExpectedConditions.visibilityOf(lbl_fullname)).getText();
+		System.out.println("Aaaja");
+		String full_name = lbl_fullname.getText();
 		return full_name;
 	}
 

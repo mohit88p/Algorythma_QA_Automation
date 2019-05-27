@@ -66,30 +66,30 @@ public class TestBase {
 	public static void initialization()
 	{
 		
-		String browserName=prop.getProperty("browser");
-		
-		if(browserName.equals("chrome"))
-		{
-			System.setProperty("webdriver.chrome.driver", projectPath+"/chromedriver");
-			driver=new ChromeDriver();
-		}else if(browserName.equals("firefox"))
-		{
-			System.setProperty("webdriver.gecko.driver", projectPath+"/geckodriver");
-			driver=new FirefoxDriver();
-		}else if(browserName.equals("safari"))
-		{
-			driver=new SafariDriver();
-		}else if(browserName.equals("opera"))
-		{
-			driver=new OperaDriver();
-		}
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(com.saalchallenge.util.TestUtil.PAGE_LOAD_TIMEOUT,TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(com.saalchallenge.util.TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		
-		log.info("Enter the URL");
-		driver.get(prop.getProperty("url"));
+//		String browserName=prop.getProperty("browser");
+//		
+//		if(browserName.equals("chrome"))
+//		{
+//			System.setProperty("webdriver.chrome.driver", projectPath+"/chromedriver");
+//			driver=new ChromeDriver();
+//		}else if(browserName.equals("firefox"))
+//		{
+//			System.setProperty("webdriver.gecko.driver", projectPath+"/geckodriver");
+//			driver=new FirefoxDriver();
+//		}else if(browserName.equals("safari"))
+//		{
+//			driver=new SafariDriver();
+//		}else if(browserName.equals("opera"))
+//		{
+//			driver=new OperaDriver();
+//		}
+//		driver.manage().window().maximize();
+//		driver.manage().deleteAllCookies();
+//		driver.manage().timeouts().pageLoadTimeout(com.saalchallenge.util.TestUtil.PAGE_LOAD_TIMEOUT,TimeUnit.SECONDS);
+//		driver.manage().timeouts().implicitlyWait(com.saalchallenge.util.TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+//		
+//		log.info("Enter the URL");
+//		driver.get(prop.getProperty("url"));
 		
 	}
 

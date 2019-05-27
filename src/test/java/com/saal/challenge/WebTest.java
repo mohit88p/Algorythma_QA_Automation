@@ -8,20 +8,29 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 import com.saalchallanges.pages.AccountPage;
 import com.saalchallanges.pages.CartPage;
 import com.saalchallanges.pages.CreateAccountPage;
@@ -46,16 +55,48 @@ public class WebTest extends TestBase {
 	public WebTest() throws IOException {
 		super();
 	}
-
-	@BeforeMethod
-	public void setUp() {
+	
+	@BeforeTest
+	@Parameters("browser")
+	public void setup(String browser) throws Exception{
 		initialization();
+		//Check if parameter passed from TestNG is 'firefox'
+		//String browserName=prop.getProperty("browser");
+		
+		if(browser.equals("chrome"))
+		{
+			System.setProperty("webdriver.chrome.driver", projectPath+"/chromedriver");
+			driver=new ChromeDriver();
+		}else if(browser.equals("firefox"))
+		{
+			System.setProperty("webdriver.gecko.driver", projectPath+"/geckodriver");
+			driver=new FirefoxDriver();
+		}else if(browser.equals("safari"))
+		{
+			driver=new SafariDriver();
+		}else if(browser.equals("opera"))
+		{
+			driver=new OperaDriver();
+		}
+		else{
+			//If no browser passed throw exception
+			throw new Exception("Browser is not correct");
+		}
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().pageLoadTimeout(com.saalchallenge.util.TestUtil.PAGE_LOAD_TIMEOUT,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(com.saalchallenge.util.TestUtil.PAGE_LOAD_TIMEOUT,TimeUnit.SECONDS);
+		
+		log.info("Enter the URL");
+		driver.get(prop.getProperty("url"));
 		htmlReporter = new ExtentHtmlReporter("Extent.html");
 		extent=new ExtentReports();
 		extent.attachReporter(htmlReporter);
 	}
 
-	@Test(priority = 1)
+
+
+	@Test
 	public void signInTest() {
 		
 		extent.attachReporter(htmlReporter);
@@ -136,7 +177,7 @@ public class WebTest extends TestBase {
 		test.pass("Validating if the 'controller=my-account' is appended in page URL");
 	}
 
-	@Test(priority = 2)
+	@Test
 	public void logInTest() {
 		extent.attachReporter(htmlReporter);
 		test = extent.createTest("Login Test", "This test is to check the login");
@@ -215,10 +256,6 @@ public class WebTest extends TestBase {
 		logger.info("Selecting the dress");
 		test.pass("Selecting the dress");
 		
-//		womenClothing.select_view_dress();
-//		logger.info("Viewing the dress in maximized view in next page");
-//		test.pass("Viewing the dress in maximized view in next page");
-
 		womenClothing.click_btn_submit();
 		logger.info("Clicking on Submit button for checkout");
 		test.pass("Clicking on Submit button for checkout");
@@ -276,7 +313,7 @@ public class WebTest extends TestBase {
 		test.pass("Validating if the 'order-confirmation' is appended in page URL");
 	}
 	
-	@AfterMethod
+	@AfterTest
 	public void tearDown(ITestResult result) {
 		
 		if(ITestResult.FAILURE==result.getStatus())

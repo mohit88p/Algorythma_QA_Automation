@@ -1,9 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Saal Challenge Test Automation Test Suite" parallel="methods">
-	<test name="Saal Challenge App Test Case">
+<suite name="Saal Challenge Test Automation Test Suite"
+	thread-count="2" parallel="tests">
+	<!-- <test name="Saal Challenge App Test Case">
 		<classes>
-			<class name="com.saal.challenge.WebTest"/>
+			<class name="com.saal.challenge.WebTest" />
 		</classes>
-	</test>	
+	</test> -->
+
+	<test name="ChromeTest">
+
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+
+			<class name="com.saal.challenge.WebTest">
+
+			</class>
+
+		</classes>
+
+	</test>
+
+	<test name="FirefoxTest">
+
+		<parameter name="browser" value="firefox" />
+
+		<classes>
+
+			<class name="com.saal.challenge.WebTest">
+
+			</class>
+
+		</classes>
+
+	</test>
+	
+	<test name="SafariTest">
+
+		<parameter name="browser" value="safari" />
+
+		<classes>
+
+			<class name="com.saal.challenge.WebTest">
+
+			</class>
+
+		</classes>
+
+	</test>
+	
+	<test name="OperaTest">
+
+		<parameter name="browser" value="opera" />
+
+		<classes>
+
+			<class name="com.saal.challenge.WebTest">
+
+			</class>
+
+		</classes>
+
+	</test>
 </suite>					

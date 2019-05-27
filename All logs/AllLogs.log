@@ -191,3 +191,82 @@
 [INFO ] 2019-05-28 01:03:58.027 [main] TestBase - Validating if the Confirmation Step End section is displayed
 [INFO ] 2019-05-28 01:03:58.040 [main] TestBase - Verifying text ORDER Confirmation is displayed
 [INFO ] 2019-05-28 01:03:58.043 [main] TestBase - Validating if the 'order-confirmation' is appended in page URL
+[INFO ] 2019-05-28 01:19:35.897 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Enter the URL
+[INFO ] 2019-05-28 01:19:56.801 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 01:19:59.753 [TestNG-test=Saal Challenge App Test Case-1] TestBase - LogIn is completed by entering username and password
+[INFO ] 2019-05-28 01:20:05.265 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Click on Women button
+[INFO ] 2019-05-28 01:20:09.235 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Selecting the dress
+[INFO ] 2019-05-28 01:20:14.493 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Clicking on Submit button for checkout
+[INFO ] 2019-05-28 01:20:24.239 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Clicking on Checkout button to proceed
+[INFO ] 2019-05-28 01:20:26.502 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Clicking on Checkout button to proceed in the next page again
+[INFO ] 2019-05-28 01:20:29.369 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Clicking on Next step button to process address
+[INFO ] 2019-05-28 01:20:29.608 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Selecting the Terms and conditions checkbox
+[INFO ] 2019-05-28 01:20:32.225 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Clicking on next to complete the shipping step
+[INFO ] 2019-05-28 01:20:34.366 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Select button - Pay by Bank Wire
+[INFO ] 2019-05-28 01:20:38.514 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Click on Confirm Order Button
+[INFO ] 2019-05-28 01:20:38.535 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Fetching the text Order Confirmation
+[INFO ] 2019-05-28 01:20:38.537 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Verifying text in application if its ORDER Confirmation
+[INFO ] 2019-05-28 01:20:38.584 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Validating if the shipping section is displayed
+[INFO ] 2019-05-28 01:20:38.618 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Validating if the Confirmation Step End section is displayed
+[INFO ] 2019-05-28 01:20:38.635 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Verifying text ORDER Confirmation is displayed
+[INFO ] 2019-05-28 01:20:38.639 [TestNG-test=Saal Challenge App Test Case-1] TestBase - Validating if the 'order-confirmation' is appended in page URL
+[INFO ] 2019-05-28 01:20:48.647 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Enter the URL
+[INFO ] 2019-05-28 01:21:01.159 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 01:21:01.262 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Entering Email Id to Create New Account
+[INFO ] 2019-05-28 01:21:01.525 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Clicking on Create Account Button
+[INFO ] 2019-05-28 01:21:03.633 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Selecting Gender Option
+[INFO ] 2019-05-28 01:21:03.761 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Entering Name and password details
+[INFO ] 2019-05-28 01:21:04.062 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Selecting date from the dropdown
+[INFO ] 2019-05-28 01:21:04.333 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Selecting month from the dropdown
+[INFO ] 2019-05-28 01:21:04.608 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Selecting year from the dropdown
+[INFO ] 2019-05-28 01:21:05.228 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Entering all the address details such as such as addr, city, state, ph.no, comapny etc
+[INFO ] 2019-05-28 01:21:08.985 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Click on Submit button
+[INFO ] 2019-05-28 01:21:09.020 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Fetching the heading of the page
+[INFO ] 2019-05-28 01:21:09.037 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Fetching the fullname of the user
+[INFO ] 2019-05-28 01:21:09.038 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Validating if the Heading of the page is right
+[INFO ] 2019-05-28 01:21:09.038 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Validating if the Full Name of the user is correct
+[INFO ] 2019-05-28 01:21:09.054 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Validating if the Account Information is displayed correctly
+[INFO ] 2019-05-28 01:21:09.084 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Validating if the logout button is displayed
+[INFO ] 2019-05-28 01:21:09.088 [TestNG-test=Saal Challenge App Test Case-2] TestBase - Validating if the 'controller=my-account' is appended in page URL
+[INFO ] 2019-05-28 01:21:13.161 [TestNG-test=Saal Challenge App Test Case-3] TestBase - Enter the URL
+[INFO ] 2019-05-28 01:21:26.806 [TestNG-test=Saal Challenge App Test Case-3] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 01:21:32.742 [TestNG-test=Saal Challenge App Test Case-3] TestBase - LogIn is completed by entering username and password
+[INFO ] 2019-05-28 01:21:32.773 [TestNG-test=Saal Challenge App Test Case-3] TestBase - Fetching the Heading after successfull login
+[INFO ] 2019-05-28 01:21:32.795 [TestNG-test=Saal Challenge App Test Case-3] TestBase - Fetching the Fullname of the sign in user
+[INFO ] 2019-05-28 01:21:32.796 [TestNG-test=Saal Challenge App Test Case-3] TestBase - Validating if the Heading displayed is correct
+[INFO ] 2019-05-28 01:21:32.796 [TestNG-test=Saal Challenge App Test Case-3] TestBase - Validating if the Fullname displayed is correct
+[INFO ] 2019-05-28 01:21:32.812 [TestNG-test=Saal Challenge App Test Case-3] TestBase - Fetching & Validating if the Account Information is displayed correctly
+[INFO ] 2019-05-28 01:21:32.841 [TestNG-test=Saal Challenge App Test Case-3] TestBase - Validating the logout button is displayed or not
+[INFO ] 2019-05-28 01:21:32.845 [TestNG-test=Saal Challenge App Test Case-3] TestBase - Validating if the 'controller=my-account' is appended in page URL
+[INFO ] 2019-05-28 01:42:28.170 [main] TestBase - Enter the URL
+[INFO ] 2019-05-28 01:42:57.230 [TestNG-test=FirefoxTest-1] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 01:43:00.152 [TestNG-test=FirefoxTest-1] TestBase - LogIn is completed by entering username and password
+[INFO ] 2019-05-28 01:43:59.418 [TestNG-tests-2] TestBase - Enter the URL
+[INFO ] 2019-05-28 01:44:14.722 [TestNG-tests-2] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 01:44:18.212 [TestNG-tests-2] TestBase - LogIn is completed by entering username and password
+[INFO ] 2019-05-28 01:44:19.366 [TestNG-tests-2] TestBase - Click on Women button
+[INFO ] 2019-05-28 01:45:28.053 [TestNG-tests-2] TestBase - Enter the URL
+[INFO ] 2019-05-28 01:45:37.537 [TestNG-tests-1] TestBase - Enter the URL
+[INFO ] 2019-05-28 01:45:40.873 [TestNG-tests-2] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 01:45:43.714 [TestNG-tests-2] TestBase - LogIn is completed by entering username and password
+[INFO ] 2019-05-28 01:45:47.544 [TestNG-tests-1] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 01:45:49.586 [TestNG-tests-2] TestBase - Click on Women button
+[INFO ] 2019-05-28 01:46:28.117 [TestNG-tests-2] TestBase - Enter the URL
+[INFO ] 2019-05-28 01:46:44.179 [TestNG-tests-2] TestBase - Sign In Button is clicked
+[INFO ] 2019-05-28 01:46:47.645 [TestNG-tests-2] TestBase - LogIn is completed by entering username and password
+[INFO ] 2019-05-28 01:46:53.062 [TestNG-tests-2] TestBase - Click on Women button
+[INFO ] 2019-05-28 01:46:57.291 [TestNG-tests-2] TestBase - Selecting the dress
+[INFO ] 2019-05-28 01:47:02.552 [TestNG-tests-2] TestBase - Clicking on Submit button for checkout
+[INFO ] 2019-05-28 01:47:12.740 [TestNG-tests-2] TestBase - Clicking on Checkout button to proceed
+[INFO ] 2019-05-28 01:47:15.294 [TestNG-tests-2] TestBase - Clicking on Checkout button to proceed in the next page again
+[INFO ] 2019-05-28 01:47:17.957 [TestNG-tests-2] TestBase - Clicking on Next step button to process address
+[INFO ] 2019-05-28 01:47:18.198 [TestNG-tests-2] TestBase - Selecting the Terms and conditions checkbox
+[INFO ] 2019-05-28 01:47:20.571 [TestNG-tests-2] TestBase - Clicking on next to complete the shipping step
+[INFO ] 2019-05-28 01:47:22.775 [TestNG-tests-2] TestBase - Select button - Pay by Bank Wire
+[INFO ] 2019-05-28 01:47:27.122 [TestNG-tests-2] TestBase - Click on Confirm Order Button
+[INFO ] 2019-05-28 01:47:27.156 [TestNG-tests-2] TestBase - Fetching the text Order Confirmation
+[INFO ] 2019-05-28 01:47:27.158 [TestNG-tests-2] TestBase - Verifying text in application if its ORDER Confirmation
+[INFO ] 2019-05-28 01:47:27.220 [TestNG-tests-2] TestBase - Validating if the shipping section is displayed
+[INFO ] 2019-05-28 01:47:27.249 [TestNG-tests-2] TestBase - Validating if the Confirmation Step End section is displayed
+[INFO ] 2019-05-28 01:47:27.264 [TestNG-tests-2] TestBase - Verifying text ORDER Confirmation is displayed
+[INFO ] 2019-05-28 01:47:27.268 [TestNG-tests-2] TestBase - Validating if the 'order-confirmation' is appended in page URL

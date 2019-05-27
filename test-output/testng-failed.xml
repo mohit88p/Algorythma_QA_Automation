@@ -1,15 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Saal Challenge Test Automation Test Suite]" parallel="tests">
+  <test thread-count="2" name="ChromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.saal.challenge.WebTest">
         <methods>
+          <include name="logInTest"/>
           <include name="checkoutTest"/>
           <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="signInTest"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- com.saal.challenge.WebTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="2" name="SafariTest(failed)" parallel="tests">
+    <parameter name="browser" value="safari"/>
+    <classes>
+      <class name="com.saal.challenge.WebTest">
+        <methods>
+          <include name="logInTest"/>
+          <include name="checkoutTest"/>
+          <include name="tearDown"/>
+          <include name="signInTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.saal.challenge.WebTest -->
+    </classes>
+  </test> <!-- SafariTest(failed) -->
+  <test thread-count="2" name="OperaTest(failed)" parallel="tests">
+    <parameter name="browser" value="opera"/>
+    <classes>
+      <class name="com.saal.challenge.WebTest">
+        <methods>
+          <include name="logInTest"/>
+          <include name="checkoutTest"/>
+          <include name="tearDown"/>
+          <include name="signInTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.saal.challenge.WebTest -->
+    </classes>
+  </test> <!-- OperaTest(failed) -->
+  <test thread-count="2" name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.saal.challenge.WebTest">
+        <methods>
+          <include name="logInTest"/>
+          <include name="tearDown"/>
+          <include name="signInTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.saal.challenge.WebTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Saal Challenge Test Automation Test Suite] -->
